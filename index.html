@@ -1,48 +1,127 @@
-<!-- Project 0001 (Website) -->
+<!-- 
+Start of index.html 
+
+Project 0001 (Website a-americanconstruction.com) 
+
+Made by Keegan Grajek
+
+This file is under copyright by a-americanconstruction.com all rights reserved 2021
+
+DELETE WHEN DONE WITH DOCUMENT ONLY FOR KEEGAN'S EYES
+Rules for document:
+class should be at the front of each element
+id should be next
+
+Class is used as a unique identifier following the format of class="hed-metatag-charset"
+id should be used as a group identifier following the format of id="hed-metatag-grp"
+id needs to have "-grp" at the end of the naming scheme
+
+comments must be on every line before the targeted element to describe it's function
+section comments must separate other sections and describe the purpose of the targeted section
+<!-- == hed section == -- >
+
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
-<!-- Head of Document -->
-<head>
-    <!-- == Meta Tags -->
-    <!-- meta tag to establish charset -->
-    <meta charset="UTF-8">
-    <!-- meta tag to establish key-words for search engines to use -->
-    <meta name="keywords" content="">
-    <!-- Auto refresh of page (on client side) every 30 seconds -->
-    <meta http-equiv="refresh" content="30">
-    <!-- Establishing the media viewport (how the website is being viewed) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Defining the author of the website -->
-    <meta name="author" content="Keegan Grajek">
-    <!-- Description to be used by search engine-->
-    <meta name="description" content="Contractor Projects">
-    <!-- == Meta Tags (End) -->
-    <!-- Title of Website -->
-    <title>A-American Construction</title>
-    <!-- Links to external documents used in this document -->
-    <link href="css-files/index.css" rel="stylesheet"/>
+    <!-- Head of Document -->
+    <head>
+        <!-- == Meta Tags -->
+        <!-- meta tag to establish charset -->
+        <meta charset="UTF-8">
+        <!-- meta tag to establish key-words for search engines to use -->
+        <meta name="keywords" content="">
+        <!-- Auto refresh of page (on client side) every 30 seconds -->
+        <meta http-equiv="refresh" content="30">
+        <!-- Establishing the media viewport (how the website is being viewed) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Defining the author of the website -->
+        <meta name="author" content="Keegan Grajek">
+        <!-- Description to be used by search engine-->
+        <meta name="description" content="Contractor Projects">
+        <!-- == Meta Tags (End) -->
+        <!-- Title of Website -->
+        <title>A-American Construction</title>
+        <!-- Links to external documents used in this document -->
+        <link href="./css-files/index.css" rel="stylesheet" type="text/css"/>
+        <!-- uncomment this line when done testing -->
+        <!-- <link href="img-files/favicon.ico" rel="icon" type="image/x-icon"/> -->
 
-    <!-- Default opening of links (in a new tab) if not specified in attribute -->
-    <base href="https://www.w3schools.com/" target="_blank">
-</head>
-<!-- Head of Document (End) -->
+        <!-- Default opening of links (in a new tab) if not specified in attribute -->
+        <base href="" target="_blank">
 
-<!-- Body -->
-<body>
-    <div class="wrapper">
-        <h1>Test</h1>
-    </div>
-</body>
-<!-- Body (End) -->
+        <!-- Script tag to link to the js file -->
+        <script src="./javascript-files/index.js" type="text/javascript"></script>
+    </head>
+    <!-- Head of Document (End) -->
 
-<!-- Footer -->
-<footer>
-    <div class="wrapper">
-
-    </div>
-</footer>
-<!-- Footer (End) -->
+    <!-- Body -->
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="hdr-elm"></header>
+            <!-- Header (End) -->
+            <div class="bdy-elm"></div>
+            <!-- Footer -->
+            <footer class="ftr-elm">
+                <!-- Container for the footer -->
+                <div class="ftr-container">
+                    <!-- Container needed to separate box 4 from the other boxes -->
+                    <div class="ftr-content-container">
+                        <!-- Box-1 contains the list of links -->
+                        <div class="ftr-box" id="ftr-box-1">
+                            <ol class="ftr-list-item" id="ftr-list-item-1">Link 1</ol>
+                            <ol class="ftr-list-item" id="ftr-list-item-2">Link 2</ol>
+                            <ol class="ftr-list-item" id="ftr-list-item-3">Link 3</ol>
+                            <ol class="ftr-list-item" id="ftr-list-item-4">Link 4</ol>
+                            <ol class="ftr-list-item" id="ftr-list-item-5">Link 5</ol>
+                        </div>
+                        <!-- Box-2 contains the summary content of page -->
+                        <a href="_blank" style="cursor:pointer" class="ftr-box" id="ftr-box-2">
+                            <h3>Terms of Use (Summary)</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, ipsum eget mollis
+                            eleifend, odio massa varius felis, eget accumsan lacus ante id dui. Suspendisse vel odio
+                            mauris. Duis ultricies quam ut purus aliquam tristique. Vestibulum sollicitudin tincidunt
+                            libero, eu facilisis enim sollicitudin at. Proin ligula nisl, sollicitudin ut rhoncus sit
+                            amet, malesuada at felis. Proin consequat suscipit rhoncus. Aliquam ut est sed tortor
+                            vulputate rutrum. Sed sit amet placerat metus, eu rutrum velit. Pellentesque sagittis dui
+                            quis arcu tempus rutrum. Ut nisl leo, lobortis in odio sit amet, tempor vestibulum odio.
+                            Praesent ut cursus purus. Nam vel ante tempor, semper nunc a, consectetur sem. Fusce non
+                            pulvinar magna. Morbi eleifend scelerisque lectus, id aliquet quam viverra in. Morbi
+                            sagittis posuere finibus. Pellentesque blandit pharetra nisi, eget pellentesque sem
+                            aliquet ut.
+                        </a>
+                        <!-- Box-3 contains the legal links -->
+                        <a href="_blank" style="cursor:pointer" class="ftr-box" id="ftr-box-3">
+                            <h3>Content Disclaimer (Summary)</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, ipsum eget mollis
+                            eleifend, odio massa varius felis, eget accumsan lacus ante id dui. Suspendisse vel odio
+                            mauris. Duis ultricies quam ut purus aliquam tristique. Vestibulum sollicitudin tincidunt
+                            libero, eu facilisis enim sollicitudin at. Proin ligula nisl, sollicitudin ut rhoncus sit
+                            amet, malesuada at felis. Proin consequat suscipit rhoncus. Aliquam ut est sed tortor
+                            vulputate rutrum. Sed sit amet placerat metus, eu rutrum velit. Pellentesque sagittis dui
+                            quis arcu tempus rutrum. Ut nisl leo, lobortis in odio sit amet, tempor vestibulum odio.
+                            Praesent ut cursus purus. Nam vel ante tempor, semper nunc a, consectetur sem. Fusce non
+                            pulvinar magna. Morbi eleifend scelerisque lectus, id aliquet quam viverra in. Morbi
+                            sagittis posuere finibus. Pellentesque blandit pharetra nisi, eget pellentesque sem
+                            aliquet ut.
+                        </a>
+                    </div>
+                    <div class="ftr-line"></div>
+                    <div class="ftr-btns-box">
+                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-site-map-btn">Site Map</a>
+                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-disclaimer-btn">Disclaimer</a>
+                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-terms-of-use-btn">Terms of Use</a>
+                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-privacy-policy-btn">Privacy Policy</a>
+                    </div>
+                    <!-- Box-4 contains the copyright legal notice -->
+                    <div class="ftr-copyright" id="ftr-box-4"></div>
+                </div>
+            </footer>
+            <!-- Footer (End) -->
+        </div>
+    </body>
+    <!-- Body (End) -->
 
 </html>
 <!-- Project 0001 (Website) (End) -->

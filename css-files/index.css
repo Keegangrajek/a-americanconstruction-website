@@ -1,10 +1,221 @@
-* {
-margin: 0;
+/*
+Start of index.css
+
+Project 0001 (Website a-americanconstruction.com) 
+
+Made by Keegan Grajek
+
+This file is under copyright by a-americanconstruction.com all rights reserved 2021
+
+DELETE THE BELOW COMMENTS WHEN DONE
+
+Rules for this document:
+- classes are for defining individual objects
+    = naming scheme should be .ftr-box-etc
+- ids are for defining groups of objects
+    = naming scheme should be #ftr-etc...-grp
+    = They should have "-grp" at the end of each id
+
+Note: naming schemes should have a mnemonic attatched ot them.
+
+The main groups for this page are:
+- head (hed)
+- everything (all)
+- scrollbar (scrlbr)
+- header (hdr)
+- body (bdy)
+- footer (ftr)
+
+organization should be done by ids (groups)
+after groups organization should be done by classes
+
+comments should describe every set of brackets and are before every initialization of code
+section comments should describe grouped together pieces of code
+ex. /* == section comment == * /
+also, sections should be used very infrequently (used for finding large groups of code)
+
+example setup:
+
+/* == ftr section == * /
+
+/* comments * /
+#ftr-box-grp {
+    ...
 }
 
-.wrapper h1 {
-padding: 10px 10px 10px 10px;
-color: black;
-font-family: Arial;
-font-weight: bold;
+/* comments * /
+.ftr-box-1 {
+    ...
+}
+
+/* comments * /
+.ftr-box-2 {
+    ...
+}
+*/
+
+/* == all section == */
+
+/* All attribute (affect everything) */
+* {
+    margin:0;
+    padding:0;
+}
+
+/* == scrlbr section == */
+::-webkit-scrollbar {
+    width:10px;
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(194, 203, 214);
+}
+
+::-webkit-scrollbar-thumb {
+    transition-timing-function: ease;
+    background:#888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: background 0.1s;
+    background:#555;
+}
+
+/* == bdy section == */
+
+.wrapper {
+    width:100%;
+}
+
+.bdy-elm {
+    height:1500px;
+    width:100%;
+    position:relative;
+}
+
+/* == ftr section == */
+
+.ftr-container {
+    color:rgb(194, 203, 214);
+    background-color:rgb(24, 27, 24);
+    width:100%;
+    font-family:helvetica;
+    position:relative;
+    bottom:0px;
+}
+
+.ftr-content-container {
+    margin: auto;
+    width:75%;
+    display:flex;
+    padding:10px;
+    font-size:12px;
+}
+
+.ftr-box {
+    color: rgb(194, 203, 214);
+    text-decoration: none;
+    display:inline-block;
+    padding:5px;
+    margin:2px;
+}
+
+#ftr-box-1 {
+    flex:2;
+}
+
+#ftr-box-2 {
+    padding: 10px;
+    flex:1;
+    box-shadow: 2px 2px 3px -2px black;
+    background-color: rgb(24, 27, 24);
+    transition: all 1s ease-in-out;
+}
+
+#ftr-box-2:hover {
+    box-shadow: inset 0 0 5px black;
+    background-color: rgb(72, 81, 72);
+    transition: all 1s ease-in-out;
+}
+
+#ftr-box-2:active {
+    box-shadow: inset 0 0 10px black;
+}
+
+#ftr-box-3 {
+    padding: 10px;
+    flex:1;
+    box-shadow: 2px 2px 3px -2px black;
+}
+
+#ftr-box-3:hover {
+    box-shadow: inset 0 0 5px black;
+    background-color: rgb(72, 81, 72);
+}
+
+#ftr-box-3:active {
+    box-shadow: inset 0 0 10px black;
+}
+
+#ftr-box-2 h3 {
+    color:white;
+    text-align:left;
+    padding:5px 0px 5px 0px;
+}
+
+#ftr-box-3 h3 {
+    color:white;
+    text-align:left;
+    padding:5px 0px 5px 0px;
+}
+
+.ftr-line {
+    border-top:solid rgb(194, 203, 214) 2px;
+    border-bottom:solid rgb(194, 203, 214) 2px;
+    border-radius:2px;
+    margin:10px 40px 10px 40px;
+}
+
+.ftr-btns-box {
+    padding-top:10px;
+    display:block;
+    text-align:center;
+    height:auto;
+    margin:10px;
+}
+
+.ftr-btns {
+    display:inline-block;
+    text-decoration: none;
+    border:solid transparent 2px;
+    border-radius: 10px;
+    padding:10px;
+    margin:0px 5px;
+    transition:background-color 0.1s;
+    transition-timing-function: ease;
+}
+
+a.ftr-btns:link {
+    color:rgb(194, 203, 214);
+}
+
+a.ftr-btns:hover {
+    color:white;
+    background-color:rgb(96, 108, 96);
+}
+
+a.ftr-btns:visited {
+    color:rgb(179, 179, 179);
+}
+
+a.ftr-btns:active {
+    color:white;
+    background-color:rgb(96, 108, 96);
+}
+
+.ftr-copyright {
+    display:block;
+    padding-top:0px;
+    padding-bottom:10px;
+    text-align:center;
 }
