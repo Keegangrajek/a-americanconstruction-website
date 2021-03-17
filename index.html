@@ -93,11 +93,26 @@ section comments must separate other sections and describe the purpose of the ta
                             <h2 class="ftr-search-title">Looking for something? Use the search tool!</h2>
                             <!-- icon/button for searching-->
                             <div class=ftr-search-flex-container>
-                                <a class="ftr-search-icon material-icons" id="ftr-search-item" onclick="myFunctionDos()">search</a>
-                                <!-- search box for query implementation-->
-                                <input class="ftr-search-box" id="ftr-search-item" type="text"></input>
-                                <!-- search clear button -->
-                                <a class="ftr-search-button" id="ftr-search-item">X</a>
+                                <div class=ftr-search-items-container>
+                                    <a 
+                                    class="ftr-search-icon material-icons" 
+                                    id="ftr-search-item" 
+                                    onclick="myFunctionDos()" 
+                                    unselectable="on"
+                                    onselectstart="return false;" 
+                                    onmousedown="return false;"
+                                    >search</a>
+                                    <!-- search box for query implementation-->
+                                    <input class="ftr-search-box" id="ftr-search-item" type="text"></input>
+                                    <!-- search clear button -->
+                                    <a 
+                                    class="ftr-search-button" 
+                                    id="ftr-search-item"
+                                    unselectable="on"
+                                    onselectstart="return false;" 
+                                    onmousedown="return false;"
+                                    >X</a>
+                                </div>
                             </div>
                         </div>
                     </div>   

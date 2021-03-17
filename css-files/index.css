@@ -118,6 +118,7 @@ example setup:
     border: solid black 0px;
     background-color: var(--color-light-grey);
     text-align: center;
+    box-shadow: inset 0px 8px 18px 0px rgba(0,0,0,0.48);
 }
 
 .ftr-search-title {
@@ -135,24 +136,35 @@ example setup:
     justify-content: center;
 }
 
-#ftr-search-item {
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 20px;
-    padding: 10px;
+.ftr-search-items-container {
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: var(--color-light-grey);
+    padding: 0px;
+    display: flex;
+    justify-content: center;
     box-shadow: 0px 8px 18px -5px rgba(0,0,0,0.48);
 }
 
+#ftr-search-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 25px;
+    height: 20px;
+    padding: 10px;
+    color: var(--color-light-grey);
+}
+
 .ftr-search-icon {
+    cursor: pointer;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     transition: all 0.2s;
     width: 40px;
+    left: 0px;
     background-color: var(--color-medium-grey);
 }
 
@@ -162,7 +174,7 @@ example setup:
 
 .ftr-search-box {
     border: none;
-    width: 40%;
+    width: 100%;
     background-color: var(--color-medium-grey);
 }
 
@@ -177,9 +189,11 @@ example setup:
 }
 
 .ftr-search-button {
+    cursor: pointer;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     width: 40px;
+    right: 0px;
     background-color: var(--color-medium-grey);
 }
 
