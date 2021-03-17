@@ -22,62 +22,98 @@ section comments must separate other sections and describe the purpose of the ta
 
 -->
 <!DOCTYPE html>
-<html lang="en-US">
+<html class="html-elm" lang="en-US">
 
     <!-- Head of Document -->
-    <head>
+    <head class="hed-elm">
         <!-- == Meta Tags -->
         <!-- meta tag to establish charset -->
-        <meta charset="UTF-8">
+        <meta class="mta-charset" charset="UTF-8">
         <!-- meta tag to establish key-words for search engines to use -->
-        <meta name="keywords" content="">
+        <meta class="mta-keywords" name="keywords" content="">
         <!-- Auto refresh of page (on client side) every 30 seconds -->
-        <meta http-equiv="refresh" content="30">
+        <meta class="mta-autorefresh" http-equiv="refresh" content="30">
         <!-- Establishing the media viewport (how the website is being viewed) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta class="mta-viewport" name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Defining the author of the website -->
-        <meta name="author" content="Keegan Grajek">
+        <meta class="mta-author" name="author" content="Keegan Grajek">
         <!-- Description to be used by search engine-->
-        <meta name="description" content="Contractor Projects">
+        <meta class="mta-description" name="description" content="Contractor Projects">
         <!-- == Meta Tags (End) -->
         <!-- Title of Website -->
-        <title>A-American Construction</title>
-        <!-- Links to external documents used in this document -->
-        <link href="./css-files/index.css" rel="stylesheet" type="text/css"/>
+        <title class="ttl-elm">A-American Construction</title>
+        
         <!-- uncomment this line when done testing -->
         <!-- <link href="img-files/favicon.ico" rel="icon" type="image/x-icon"/> -->
 
         <!-- Default opening of links (in a new tab) if not specified in attribute -->
-        <base href="" target="_blank">
-
+        <base class="bse-elm" href="index.html" target="_blank">
+        <!-- links to the font google api to get material icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Links to external documents used in this document -->
+        <link class="lnk-css" href="./css-files/index.css" rel="stylesheet" type="text/css"/>
+        <!-- link to cloudfare stylesheet for social media icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Script tag to link to the js file -->
-        <script src="./javascript-files/index.js" type="text/javascript"></script>
+        <script class="lnk-javascript" src="./javascript-files/index.js" type="text/javascript"></script>
     </head>
     <!-- Head of Document (End) -->
 
     <!-- Body -->
-    <body>
-        <div class="wrapper">
+    <body class="bdy-elm">
+        <div class="wpr-div">
             <!-- Header -->
             <header class="hdr-elm"></header>
             <!-- Header (End) -->
-            <div class="bdy-elm"></div>
+            <div class="bdy-div"></div>
             <!-- Footer -->
             <footer class="ftr-elm">
+                <!-- footer social media wrapper, contains these with appropriate padding-->
+                <div class="ftr-socialmedia-wpr">
+                    <!-- footer social media container, contains the icons-->
+                    <div class="ftr-socialmedia-container">
+                        <!-- social media icons used the cloudfare stylesheet-->
+                        <a class="ftr-socialmedia-icon-1 fa fa-facebook" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-2 fa fa-twitter" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-3 fa fa-google" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-4 fa fa-linkedin" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-5 fa fa-youtube" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-6 fa fa-instagram" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-7 fa fa-pinterest" id="ftr-socialmedia-icon" href="_blank"></a>
+                        <a class="ftr-socialmedia-icon-8 fa fa-tumblr" id="ftr-socialmedia-icon" href="_blank"></a>
+                    </div>
+                </div>
                 <!-- Container for the footer -->
                 <div class="ftr-container">
+                    <!-- website search wrapper -->
+                    <div class="ftr-search-wrapper">      
+                        <!-- website search container-->           
+                        <div class="ftr-search-container">
+                            <h2 class="ftr-search-title">Looking for something? Use the search tool!</h2>
+                            <!-- icon/button for searching-->
+                            <div class=ftr-search-flex-container>
+                                <a class="ftr-search-icon material-icons" id="ftr-search-item" onclick="myFunctionDos()">search</a>
+                                <!-- search box for query implementation-->
+                                <input class="ftr-search-box" id="ftr-search-item" type="text"></input>
+                                <!-- search clear button -->
+                                <a class="ftr-search-button" id="ftr-search-item">X</a>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- footer line to separate content-->
+                    <div class="ftr-line-1" id="ftr-line"></div>
                     <!-- Container needed to separate box 4 from the other boxes -->
                     <div class="ftr-content-container">
                         <!-- Box-1 contains the list of links -->
-                        <div class="ftr-box" id="ftr-box-1">
-                            <ol class="ftr-list-item" id="ftr-list-item-1">Link 1</ol>
-                            <ol class="ftr-list-item" id="ftr-list-item-2">Link 2</ol>
-                            <ol class="ftr-list-item" id="ftr-list-item-3">Link 3</ol>
-                            <ol class="ftr-list-item" id="ftr-list-item-4">Link 4</ol>
-                            <ol class="ftr-list-item" id="ftr-list-item-5">Link 5</ol>
+                        <div class="ftr-box-1" id="ftr-box">
+                            <ol class="ftr-list-item-1" id="ftr-list-item">Link 1</ol>
+                            <ol class="ftr-list-item-2" id="ftr-list-item">Link 2</ol>
+                            <ol class="ftr-list-item-3" id="ftr-list-item">Link 3</ol>
+                            <ol class="ftr-list-item-4" id="ftr-list-item">Link 4</ol>
+                            <ol class="ftr-list-item-5" id="ftr-list-item">Link 5</ol>
                         </div>
                         <!-- Box-2 contains the summary content of page -->
-                        <a href="_blank" style="cursor:pointer" class="ftr-box" id="ftr-box-2">
+                        <a class="ftr-box-2" id="ftr-box" href="_blank" style="cursor:pointer">
                             <h3>Terms of Use (Summary)</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, ipsum eget mollis
                             eleifend, odio massa varius felis, eget accumsan lacus ante id dui. Suspendisse vel odio
@@ -92,7 +128,7 @@ section comments must separate other sections and describe the purpose of the ta
                             aliquet ut.
                         </a>
                         <!-- Box-3 contains the legal links -->
-                        <a href="_blank" style="cursor:pointer" class="ftr-box" id="ftr-box-3">
+                        <a class="ftr-box-3" id="ftr-box" href="_blank" style="cursor:pointer">
                             <h3>Content Disclaimer (Summary)</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, ipsum eget mollis
                             eleifend, odio massa varius felis, eget accumsan lacus ante id dui. Suspendisse vel odio
@@ -107,15 +143,15 @@ section comments must separate other sections and describe the purpose of the ta
                             aliquet ut.
                         </a>
                     </div>
-                    <div class="ftr-line"></div>
+                    <div class="ftr-line-2" id="ftr-line"></div>
                     <div class="ftr-btns-box">
-                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-site-map-btn">Site Map</a>
-                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-disclaimer-btn">Disclaimer</a>
-                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-terms-of-use-btn">Terms of Use</a>
-                        <a style="cursor:pointer" href="_blank" class="ftr-btns" id="ftr-privacy-policy-btn">Privacy Policy</a>
+                        <a class="ftr-site-map-btn" id="ftr-btns" style="cursor:pointer" href="_blank">Site Map</a>
+                        <a class="ftr-disclaimer-btn" id="ftr-btns" style="cursor:pointer" href="_blank">Disclaimer</a>
+                        <a class="ftr-terms-of-use-btn" id="ftr-btns" style="cursor:pointer" href="_blank">Terms of Use</a>
+                        <a class="ftr-privacy-policy-btn" id="ftr-btns" style="cursor:pointer" href="_blank">Privacy Policy</a>
                     </div>
                     <!-- Box-4 contains the copyright legal notice -->
-                    <div class="ftr-copyright" id="ftr-box-4"></div>
+                    <div class="ftr-box-4" id="ftr-box"></div>
                 </div>
             </footer>
             <!-- Footer (End) -->

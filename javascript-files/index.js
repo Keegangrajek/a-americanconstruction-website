@@ -27,8 +27,13 @@ document.addEventListener("DOMContentLoaded", function(){
     var currentYear = d.getFullYear();
     // Case and switch statement for converting from integer to mnemonic of month
     // This line sets the footer's inner HTML so it can interface with the script
-    document.getElementById("ftr-box-4").innerHTML = "<footer><small>&copy; Copyright " + currentYear +
-    ", A-American Construction. All Rights Reserved</small></footer>";
+    var x = document.getElementsByClassName("ftr-box-4");
+    x[0].innerHTML = `<small>&copy; Copyright ${currentYear}, A-American Construction. All Rights Reserved</small>`;
     // Footer loader (end) \\
 });
+
+// This is the function that handles the search query button at the bottom of the website
+function myFunctionDos() {
+    console.log("LOL");
+};
 // Document event listener function (end) \\
