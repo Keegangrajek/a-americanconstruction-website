@@ -178,3 +178,7 @@ Then after responsive design is done I will make content such as
 Started 12:00am to
 
 Working on the favicon for the website (converting the svg logo into a png .ico file
+
+Just added the favicon for the website (I might edit that later to be something a little bit "less squished"
+
+Now I am going to work on the social media icons and making sure they perform well under responsive design testing

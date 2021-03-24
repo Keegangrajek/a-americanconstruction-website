@@ -300,9 +300,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ftr-socialmedia-container {
     margin: auto;
     width: 75%;
-    display: flex;
-    padding: 10px;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 /* footer social media icons */

@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var x = document.getElementsByClassName("ftr-box-4");
     x[0].innerHTML = `<small>&copy; Copyright ${currentYear}, A-American Construction. All Rights Reserved</small>`;
     // Footer loader (end) \\
+
+    // Code to smooth out the movement of boxes upon resizing the window
 });
 
 // This is the function that handles the search query button at the bottom of the website
