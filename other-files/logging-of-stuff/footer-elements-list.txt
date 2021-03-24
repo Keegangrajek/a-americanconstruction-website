@@ -1,0 +1,25 @@
++ copyright
++- sitemap
++- privacy policy
++- terms of use
+- contact
+- address and link to map/directions
+- phone and fax numbers
+- navigation
++ social icons
+- social media widgets
+- email signup
+- login
+- press
+- site search tool
+- images/about us
+- branding
+- mission statement
+- keywords for search engine optimization
+- awards and certifications
+- association memberships
+- testimonials
+- latest articles
+- upcoming events/current projects
+- donate/call to action
+- apply now button

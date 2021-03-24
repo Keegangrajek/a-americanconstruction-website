@@ -1,0 +1,11 @@
+This document will have all of the things that are going to be on the website
+
+Key:
+- means not done yet
++ means done
+
+==== Day 7 ====
+- add logo
+- google advertisement of website content
+- local to the state of washington (show this in 1 block)
+- website smart design, adaptive to each device

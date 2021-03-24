@@ -1,0 +1,25 @@
+Goals:
+- Always be open to other options and opinions to figure out what is possible/best
+- Log everything important
+
+Tasks:
+- Find out if there is a domain of the website that he had/has.
+- Find out if he still has access to the old website (if there is one)
++ Purchase the domain aamericanconstruction.com and a-americanconstruction.com
++ Get photo from philip of logo
++ Text my email to Philip
++ Find out good times to speak with Philip
+	+ Probably 5:30pm checkin
++ Talk to Philip about pricing
+	= I will be logging hours
+		+ Working on website (setting up backend, front end design, security, testing, editing)
+		+ Talking with Philip about the website (sitting down and working some issues out)
+	= What I won't be logging
+		- Research
+		- Logging of actions
+		- Communicating short bits of info
+-+ Ask Philip what he wants in the website (list in website-plan-v1)
+	+ kind of asked a few things (took some notes listed call-notes/call-1-day-1)
+- Make website
+- Show Philip website and make changes accordingly
+

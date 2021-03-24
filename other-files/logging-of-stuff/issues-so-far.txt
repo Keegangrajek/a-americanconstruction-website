@@ -1,0 +1,55 @@
+problems with website currently
+
+Things I need to consider:
+- Different browsers
+- Device type
+- Device screen-size
+- Device pixel density
+- Layouts of website for different Device Types
+
+
+Whole website
+	Problem:
+		Responsive design isn't working properly, I need to do some more research
+	What I want to happen:
+		- Mobile:
+			Responsive design Key things:
+			- Sizing determined by the preset screen and text sizing
+			 (does not change during viewing of website because sizing
+			  isn't something that happens on mobile)
+			- No resizing of website (only mobile version of website is displayed
+			  unless requested by user (but this should not be defaulted)
+			- All of the animation of boxes should be smoother upon rotation of screen
+		- Desktop:
+			Responsive design key things:
+			- Smooth transition of objects when windows is resized
+			- Website is designed properly so that all features are displayed as intended
+			- No snapping of features when there is an animation (something moving or changing property)
+- ftr-socialmedia-icons
+	Problem:
+		Responsive design when shinking makes the icons not porpotionally sized (Not circular, they turn into ovals)
+	What I want to happen:
+		I want the size of the social media icons to remain constant (ish)
+		I also want to the social media icons to wrap to the next line when they can't fit the window
+		I also want the margins of the social media box to not exist/shrink down to 0 (ish) when in small window
+
+- ftr-box
+	Problem:
+		Responsive design screws up the text wrapping and it just overflows.
+	What I want to happen:
+		I want the text to stay in the damn box it is in and for the box to move
+		Height should be the expansive value, when it hits a certain height.
+
+-hdr
+	Problem:
+		I need to setup the media queries properly
+	What I want to happen:
+		Smooth transition between resizing of the website
+
+-scrollbar
+	Problem:
+		Window resizing causes horizontal scrollbar to appear
+	What I want to happen:
+		I only want a vertical scrollbar at all times
+		
+	

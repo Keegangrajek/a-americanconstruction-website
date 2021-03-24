@@ -1,0 +1,180 @@
+Philips Website Start Date 1/7/2021
+
+==== Day 0 (1/7/2021) ====
+Philip called me today (1/7/2021) in the evening to figure out if I can do a website for him
+I said, yes, but I would need to do a little research about "website things" as I haven't done anything in a while with building websites and I could use some brushing up on material. (Code, Hosting Services, Techniques, Pricing, maybe some other things)
+
+I also briefly said to Philip that my pricing would be around 15 dollars an hour because this job is not labor intensive.
+I also told philip that I do not count "Researching" stuff as part of my pay, so I will be excluding all of my hours involving research.
+Things I will not be paid for:
+- Researching
+- Logging of actions and communication
+
+Pay from hours I will be including:
+- Actually building website
+- Working with Philip to build website
+
+
+Talked to mom about pricing, how much she paid for her website (later that evening, during out grocery shopping trip)
+She mentioned the pricing that her website developer and her agreed upon was $1,100
+This accounts for 1 page and a shop.
+I would say the shop accounts for 4 pages
+1,100 / 5 (pages) = 220 per page
+
+I intend to be paid hourly (as there might be some extra long circumstances)
+Then I will determine if the pricing of the page is too high or too low with reference of my effort towards it (in time spent).
+We will adjust the pricing after I have done everything to be as fair as possible.
+
+It should take about 14.6 hours to complete one page (according to the estimate my mom gave me)
+
+==== Day 1 (1/8/2021) ====
+
+Started researching material (Hosting Services, and some other things) 2:00pm
+
+Went to pages.github.com and made a website
+keegangrajek.github.io
+The repository for editing the files is github.come/keegangrajek/keegangrajek.github.io
+I am now looking at the documentation for github pages
+
+I need to figure out:
+- How to change the DNS (Domain Name System) of the website to a custom domain.
+- How to include other website files that are more advanced (jquery, php, javascript, etc)
+
+Philip called me at 5:30pm to 5:55pm and we talked about a few things logged in call-notes/call-1-day-1
+
+==== Day 2 (1/9/2021) ====
+
+Started figuring out domain name connection to the website.
+
+Did some more research on how to use the github website
+
+==== Day 3 (1/10/2021) ====
+
+Purchased website domain name
+
+I payed 27 dollars for both domains aamericanconstruction.com and a-americanconstruction.com as well as 1 user account to manage the domain.
+
+Then I configured the doman services to meet the needs of the website (security, proper linking)
+
+I need to talk to philip about the pricing of keeping the doman should be $2.50 a month
+
+==== Day 4 (1/14/2021) ====
+Hours spent working (2 hours)
+
+Linked domain to website (started at 12:00am stopped at 1:30am) (continued at 3:30am till 4:00am)
+
+Paused because when I initialized the dns process through google and github's servers, there is a 48 hour wait time to get everything configured properly on their end.
+
+I verified that everything was working properly using the commands:
+dig www.a-americanconstruction.com +nostats +nocomments +nocmd
+dig www.aamericanconstruction.com +nostats +nocomments +nocmd
+and I tested the website's backend operation by going to the url on google chrome. Both www.aamericanconstruction.com www.a-americanconstruction.com and a-americanconstruction.com
+
+I will check the box for "force https" after the ssl certificate has processes through github's system. But for now I will work on something else...
+
+==== Day 5 (1/15/2021) ====
+Hours spent working (1 hour)
+
+Started coding a few essential things for the base website framework
+- Footer of website
+- Header of website
+
+Will make plan for other pages and confirm with Philip about the choices he might want to do.
+
+==== Day 6 (1/16/2021) ====
+Hours spent working (3 hours)
+
+Continued coding the base website framework
+- Footer of website
+- Header of website
+
+==== Day 7 (1/18/2021) ====
+
+Just did a ton of research on what key elements need to go into the footer, and I have made a list of them and am going to edit the list down to essential things.
+
+Took a long break to make enough money for my flight to Colorado
+
+==== Day 8 (1/25/2021) ====
+
+Started at 4:00pm stopped at 5:00pm
+
+Started working on the website again. Going to continue working on the footer and header as needed.
+
+==== Day 9 (2/3/2021) ====
+
+Started at 2:00pm Stopped at 4:00pm to do some research
+Started at 7:00pm stopped at 9:00pm
+
+continuing work on footer
+
+==== Day 10 (2/5/2021) ====
+
+started 7:00pm stopped at 7:30pm
+
+worked on the footer links to the important legal documents that maintain the website's credibility and legality.
+
+==== Day 11 (3/5/2021) ====
+
+called philip around 4:00pm to talk about some things
+this call was really short I will not count any time for it
+
+==== Day 12 (3/7/2021) ====
+
+Started at 8:00pm stopped at 9:45pm
+
+working on editing the footer because a lot of the things on it need to be optimized and the animations need to work better with the styling
+
+I made all the copyright changes to the code files I am currently working on so there are no legal issues with ownership
+
+Now I am going to design a universal button to be used throughout the website
+
+==== Day 13 (3/12/2021) ====
+
+Started at 10:00pm stopped at 11:30pm
+
+Finally figured out everything with the dummy website, and now have it running everything on my local ip.
+
+I will link it up to a free DNS hosting service to allow philip to view the website externally as the ip is already port forwarded.
+
+I am going to also transfer over all of the css and make sure my organization format for the html elements work properly as to continue to use it
+in the future.
+
+==== Day 14 (3/13/2021) ====
+
+Started at 12:30am stopped at 1:30am Started at 11:30am to 1:00pm
+
+Continuing work
+
+Just finished social media section of footer
+
+==== Day 15 (3/16/2021) ====
+
+Started 8:15pm to 9:15pm started 10:00pm stopped at 10:30pm
+
+Working on the header and fixing the search bar in the footer
+
+==== Day 16 (3/17/2021) ====
+
+Started at 8:30pm to 10:30pm
+
+Finished up the footer (ish) design elements and am now going to work on the header as well as the design elements of the body
+
+==== Day 17 (3/22/2021) ====
+
+Started 7:00pm to 10:00pm
+
+Figuring out problems with responsive design and making a log of them on github
+Going to try and fix all of them tonight
+
+Then after responsive design is done I will make content such as
+- 404 page
+- dislcaimer page
+- privacy policy page
+- site map
+- other pages
+
+==== Day 18 (3/24/2021) ====
+
+Started 12:00am to
+
+Working on the favicon for the website (converting the svg logo into a png .ico file
