@@ -63,7 +63,6 @@ example setup:
 }
 
 .html-elm {
-    overflow-x: hidden;
 }
 
 :root {
@@ -142,10 +141,19 @@ example setup:
 }
 
 .hdr-menu {
-    display: none !important;
+    display: none;
     text-decoration: none;
-    display: flex;
     color: var(--color-light-grey);
+    font-size: 50px;
+}
+
+@media screen and (max-width: 960px){
+    .hdr-menu {
+        display: flex;
+    }
+    .hdr-elements-container {
+        display: none;
+    }
 }
 
 .hdr-logo-link {
@@ -236,6 +244,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     box-shadow: 0px 0px 24px 4px #000000;
 }
 
+@media screen and (max-width: 1160px) {
+    .ftr-search-items-container {
+        width: 80%;
+    }    
+}
+
 #ftr-search-item {
     display: flex;
     align-items: center;
@@ -313,14 +327,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #ftr-socialmedia-icon { /* all icons */
     display: inline-block;
     color: white;
-    padding: 20px;
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
+    padding: 15px;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     text-decoration: none;
     margin: 7px 10px;
-    border-radius: 20px;
+    border-radius: 40%;
     transition: all 0.2s;
     opacity: 70%;
     box-shadow: none;
@@ -393,6 +407,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin:2px;
 }
 
+@media screen and (max-width: 1400px){
+    .ftr-content-container {
+        flex-direction: column;
+    }
+}
+
 .ftr-box-1 {
     flex:2;
 }
@@ -455,7 +475,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .ftr-btns-box {
     padding-top:10px;
-    display:block;
+    display: block;
     text-align:center;
     height:auto;
     margin:10px;
@@ -475,6 +495,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: rgb(24, 27, 24);
 }
 
+@media screen and (max-width: 650px) {
+    .ftr-btns-box {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 #ftr-btns:hover {
     color: rgb(0, 0, 0);
     background-color:rgb(212, 220, 230);
@@ -490,9 +521,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* footer box (copyright)*/
 
 .ftr-box-4 {
-    width: 99%;
-    display:block;
-    padding-top:0px;
-    padding-bottom:10px;
-    text-align:center;
+    color: rgb(194, 203, 214);
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ftr-box-4-centered {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 0.8rem;
 }

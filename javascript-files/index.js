@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var currentYear = d.getFullYear();
     // Case and switch statement for converting from integer to mnemonic of month
     // This line sets the footer's inner HTML so it can interface with the script
-    var x = document.getElementsByClassName("ftr-box-4");
-    x[0].innerHTML = `<small>&copy; Copyright ${currentYear}, A-American Construction. All Rights Reserved</small>`;
+    var x = document.getElementsByClassName("ftr-box-4-centered");
+    x[0].innerHTML = `&copy; Copyright ${currentYear}, A-American Construction. All Rights Reserved`;
     // Footer loader (end) \\
 
     // Code to smooth out the movement of boxes upon resizing the window

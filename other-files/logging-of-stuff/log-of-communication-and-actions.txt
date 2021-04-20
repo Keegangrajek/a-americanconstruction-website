@@ -175,10 +175,19 @@ Then after responsive design is done I will make content such as
 
 ==== Day 18 (3/24/2021) ====
 
-Started 12:00am to
+Started 12:00am to 1:00am
 
 Working on the favicon for the website (converting the svg logo into a png .ico file
 
 Just added the favicon for the website (I might edit that later to be something a little bit "less squished"
 
 Now I am going to work on the social media icons and making sure they perform well under responsive design testing
+
+I figured everything out with the social media icons wrapping properly on the website. However to make the wrapping
+process smooth will take a lot more research on how to manipulate the element properties smoothly. The problem that
+happens is the icons will move smoothly but the div container holding them does not. I need to figure out to do this.
+But for now I will just abandon that feature as I am happy with the snappyness of it anyways. Doesn't really matter
+that much...
+
+I will now apply the wrapping properties to the rest of the elements except for the header because that is a little
+more complicated
