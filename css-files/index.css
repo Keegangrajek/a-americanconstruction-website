@@ -97,6 +97,10 @@ example setup:
 
 /* == hdr section == */
 
+.hdr-mini-nav {
+    display: none;
+}
+
 .hdr-wrp {
     width: 100%;
     background-color: var(--color-light-black);
@@ -474,36 +478,30 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* footer buttons */
 
 .ftr-btns-box {
-    padding-top:10px;
-    display: block;
-    text-align:center;
-    height:auto;
-    margin:10px;
+    margin: auto;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #ftr-btns {
+    font-size: 1rem;
+    text-align: center;
+    width: 120px;
     font-weight: bold;
     display:inline-block;
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    padding:5px 10px 5px 10px;
-    margin:0px 10px;
+    padding:8px 8px;
+    margin:10px 10px;
     transition-timing-function: ease;
     transition:all 0.2s;
     background-color: var(--color-light-grey);
     color: rgb(24, 27, 24);
-}
-
-@media screen and (max-width: 650px) {
-    .ftr-btns-box {
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 #ftr-btns:hover {

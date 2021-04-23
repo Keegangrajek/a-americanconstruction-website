@@ -35,7 +35,15 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 // This is the function that handles the search query button at the bottom of the website
-function myFunctionDos() {
+function myFunctionDos(){
     console.log("LOL");
+};
+
+function navigationOpen(){
+    console.log("open");
+};
+
+function navigationClose(){
+    console.log("closed");
 };
 // Document event listener function (end) \\
