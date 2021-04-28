@@ -1,0 +1,61 @@
+coding goals:
++ Abstraction
+	= Simplifying a complex process to a user
+	# using code to take a user's input and spit out what they want
+	without the user understanding the code/concepts behind the process.
+	# washing machine with buttons, the user will press the buttons and
+	get the job done; this eliminates the manual operation of the machine
+	and simplifies the entire process without the end user understanding
+	all of the mechanisms.
+	# the typical user just cares about washing their clothes, not the
+	machine itself.
+	# However, the layering of abstraction has multiple audiences. What
+	about the repair man? If they need to repair the machine, it should
+	be simple to do so; they shouldn't need a degree to repair the machine
+	just some special training (you can even avoid this with intuitive design)
+	
+	= If I were to use abstraction in code (abstract classes)
+	# these classes would just be bits of code that outputs the wanted parts
+	instead of you having to code everything yourself and grossly
+	overcomplicating everything.
+	# this is why it is good to use other people's code because it simplifies
+	your job so you don't have to code everything from scratch.
+	# ex. function that checks if a file and file-path exists in a parsing
+	program. You shouldn't need to code this function, just the parser.
+	This is a way of simplifying your job because all you need to do is use
+	the function and it spits out what you want (boolean of file existence)
+	# This file checking function should also output an explanation of why
+	the file cannot be found or is unusable, in a way that you can use it to
+	either inform the end user, or you.
+	# This is what compilers do, if your code has errors in it, it tells you
+	which line the error is happening at as well as what type of error it is.
+	This is intentionally made simple so you can debug easily without having
+	to manually go through your complex code as if the output of the compiler
+	was nothing and you just had to troubleshoot without any idea of what went
+	wrong.
+
+	= What I don't understand still
+	# what is the difference between an "abstract class" and a normal class?
+	# don't they both simplify a concept in use?
+
+	= Abstraction can also become too simple
+	# Sometimes certain users will want to configure stuff so it can benefit
+	them. You need to find a way to apeal to all audiences.
+	# to types of complexity: Necessary complexity, Unnecessary complexity
+- Encapsulation
+- Polymorphism
+- Inheritance
+- Cyclomatic Complexity
+- Halstead Complexity
+- Cohesion
+- Coupling
+- Dependency Inversion
+- Readability
+- Understandability
+- Extendability
+- Robustness
+- Correctness
+- Self-Documentation
+- Cleanliness
+- Testability
+- More...

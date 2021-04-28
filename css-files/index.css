@@ -62,9 +62,6 @@ example setup:
     padding:0;
 }
 
-.html-elm {
-}
-
 :root {
     --color-chrome-grey: #3f3f3f;
     --color-light-grey: #c2cbd6;
@@ -99,6 +96,31 @@ example setup:
 
 .hdr-mini-nav {
     display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: var(--color-light-black);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hdr-x-btn {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-light-grey);
+    font-size: 20px;
+}
+
+.hdr-x-btn:hover {
+    cursor: pointer;
+    color: var(--color-medium-grey);
+}
+
+.mini-nav {
+    width: 100px;
+    text-align: center;
 }
 
 .hdr-wrp {
@@ -151,6 +173,11 @@ example setup:
     font-size: 50px;
 }
 
+.hdr-menu:hover {
+    cursor: pointer;
+    color: var(--color-medium-grey);
+}
+
 @media screen and (max-width: 960px){
     .hdr-menu {
         display: flex;
@@ -161,7 +188,6 @@ example setup:
 }
 
 .hdr-logo-link {
-    width: 100%;
     display: flex;
 }
 
@@ -169,6 +195,18 @@ example setup:
     margin: 20px 10px;
     height: 2rem;
     width: auto;
+}
+
+.hdr-logo-text {
+    color: var(--color-light-grey);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100%;
+}
+
+.hdr-logo-text h1 {
+    text-align: left;
+    display: inline-flexbox;
 }
 
 /* == bdy section == */

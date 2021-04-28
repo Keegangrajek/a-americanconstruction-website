@@ -35,15 +35,23 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 // This is the function that handles the search query button at the bottom of the website
+
+var html_elm = document.getElementsByClassName("html-elm");
+var hdr_mini_nav = document.getElementsByClassName("hdr-mini-nav");
+
+// test function
 function myFunctionDos(){
     console.log("LOL");
 };
 
+// function to open the nav bar for mobile devices
 function navigationOpen(){
-    console.log("open");
+    hdr_mini_nav[0].style.display = "flex";
+    html_elm[0].style.overflowY = "hidden";
 };
-
+// function to close the nav bar for mobile devices
 function navigationClose(){
-    console.log("closed");
+    hdr_mini_nav[0].style.display = "none";
+    html_elm[0].style.overflowY = "auto";
 };
 // Document event listener function (end) \\
