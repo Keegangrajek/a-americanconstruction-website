@@ -58,4 +58,17 @@ coding goals:
 - Self-Documentation
 - Cleanliness
 - Testability
+- Browsers
+	= Chrome
+	= Edge
+	= Firefox
+	= Internet Explorer
+	= Opera
+	= Safari
+	= WebView Android
+	= Chrome Android
+	= Firefox Android
+	= Opera Android
+	= Safari on iOS
+	= Samsung Internet
 - More...
