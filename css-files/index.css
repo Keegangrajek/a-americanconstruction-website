@@ -217,7 +217,7 @@ example setup:
 
 .hdr-logo-text-link {
     text-decoration: none;
-    color: var(--color-light-grey)
+    color: var(--color-light-grey);
     cursor: pointer;
 }
 
@@ -254,6 +254,59 @@ example setup:
     .hdr-logo-text-link {
         display: none;
     }
+}
+
+.scrolling-navbar-wpr {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    background-color: var(--color-light-black);
+    transition: all 0.3s;
+}
+.scrollbar-toggle-native-on {
+    height: 0px;
+}
+
+.scrollbar-toggle-native-off {
+    height: 35px;
+    box-shadow: 0px -30px 30px 40px black;
+}
+
+.scrolling-navbar-wpr:hover {
+    height: 75px;
+}
+
+.scrolling-navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scrolling-navbar-logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scrolling-navbar-logo {
+    display: flex;
+    position: relative;
+    top: 0px;
+    height: 20px;
+}
+
+.scrolling-navbar-logo-container h1 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin-left: 5px;
+    margin-top: 2px;
 }
 
 /* == bdy section == */

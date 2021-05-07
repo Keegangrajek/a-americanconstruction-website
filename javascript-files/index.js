@@ -35,14 +35,60 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 // Document event listener function (end) \\
 
-// This is the function that handles the search query button at the bottom of the website
+var already_been_set_1 = false;
+var already_been_set_2 = false;
 
+// This is the header event listener function
+// All of the variables used in this function have to stay in the function, otherwise
+// they become undefined if they are in global scope. Have not found a solution.
+window.addEventListener("scroll", function() {
+    var elmnt = document.getElementById("id-hdr-wpr");
+    instanceOfScrollbarCheck(elmnt.offsetHeight);
+})
+
+// This function checks the state of the scrollbar (actually setup for checking the body)
+function instanceOfScrollbarCheck(height_of_initial) {
+    var l = document.querySelector("#id-scrolling-navbar-wpr").classList;
+    if (window.scrollY > height_of_initial) {
+        if (l.contains("scrollbar-toggle-native-on") == true){
+            l.remove("scrollbar-toggle-native-on");
+            l.add("scrollbar-toggle-native-off");
+            return;
+        } if (l.contains("scrollbar-toggle-native-off")) {
+            return;
+        } else {
+            console.log("Error: instanceOfScrollbarCheck(): else statement #1");
+            return;
+        }
+    } else {
+        if (l.contains("scrollbar-toggle-native-on") == true){
+            return;
+        } if (l.contains("scrollbar-toggle-native-off")) {
+            l.remove("scrollbar-toggle-native-off");
+            l.add("scrollbar-toggle-native-on");
+            return;
+        } else {
+            console.log("Error: instanceOfScrollbarCheck(): else statement #2");
+            return;
+        }
+    }
+}
+
+
+
+// This is the function that handles the search query button at the bottom of the website
 var html_elm = document.getElementsByClassName("html-elm");
 var hdr_mini_nav = document.getElementsByClassName("hdr-mini-nav");
 var hdr_logo_img = document.getElementsByClassName("hdr-logo-img");
 var hdr_logo_text_link_h1_1 = document.getElementsByClassName("hdr-logo-text-link-h1-1");
 var hdr_logo_text_link_h1_2 = document.getElementsByClassName("hdr-logo-text-link-h1-2");
 var mini_nav = document.getElementsByClassName("mini-nav");
+var id_scrolling_navbar_wpr = document.getElementById("id-scrolling-navbar-wpr");
+
+// Elements of scrolling navbar
+var scrolling_navbar_wpr = document.getElementsByClassName("scrolling-navbar-wpr");
+var scrolling_navbar_toggle = document.getElementsByClassName("scrolling-navbar-toggle");
+var scrolling_navbar = document.getElementsByClassName("scrolling-navbar");
 
 // test function
 function myFunctionDos(){
