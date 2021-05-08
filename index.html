@@ -72,11 +72,11 @@ section comments must separate other sections and describe the purpose of the ta
             <div class="hdr-wrp" id="id-hdr-wpr">
                 <!-- header div, actual container that contains items -->
                 <div class="hdr-div">
-                    <!-- header items -->
-                    <div class="hdr-logo-link" href="_blank">
-                        <img class="hdr-logo-img" src="./img-files/logo.svg" alt="logo-image" onmouseover="hoverNavigationButtonOn()" onmouseout="hoverNavigationButtonOff()" onclick=""></img>
-                    </div>    
+                    <!-- header items -->   
                     <div class="hdr-logo-text">
+                        <div class="hdr-logo-link" href="_blank">
+                            <img class="hdr-logo-img" src="./img-files/logo.svg" alt="logo-image" onmouseover="hoverNavigationButtonOn()" onmouseout="hoverNavigationButtonOff()" onclick=""></img>
+                        </div>
                         <a class="hdr-logo-text-link" href="">
                             <h1 class="hdr-logo-text-link-h1-1" onmouseover="hoverNavigationButtonOn()" onmouseout="hoverNavigationButtonOff()">A-American Construction</h1>
                             <h1 class="hdr-logo-text-link-h1-2" onmouseover="hoverNavigationButtonOn()" onmouseout="hoverNavigationButtonOff()">A-American<br>Construction</h1>
@@ -93,12 +93,20 @@ section comments must separate other sections and describe the purpose of the ta
                 </div>
             </div>
             <div class="scrolling-navbar-wpr scrollbar-toggle-native-on" id="id-scrolling-navbar-wpr">
-                <!-- <div class="scrolling-navbar">
-                    <div class="scrolling-navbar-logo-container">
-                        <img class="scrolling-navbar-logo" id="id-scrolling-navbar" src="./img-files/logo.svg" alt="logo-image"></img>
-                        <h1>A-American Construction</h1>
+                <div class="scrolling-navbar">
+                    <a class="scrolling-navbar-logo-container" href="#" onmouseover="hoverScrollingNavbarButtonOn()" onmouseout="hoverScrollingNavbarButtonOff()">
+                        <img class="scrolling-navbar-logo" id="id-scrolling-navbar-logo" src="./img-files/logo.svg" alt="logo-image"></img>
+                        <h1 class="scrolling-navbar-logo-text" id="id-scrolling-navbar-logo-text">A-American Construction</h1>
+                    </a>
+                    <div class="scrolling-navbar-link-container">
+                        <a class="scrolling-navbar-link" id="scrolling-navbar-link-home" href="#">HOME</a>
+                        <a class="scrolling-navbar-link" id="scrolling-navbar-link-about" href="#">ABOUT</a>
+                        <a class="scrolling-navbar-link" id="scrolling-navbar-link-contact" href="#">CONTACT</a>
+                        <a class="scrolling-navbar-link" id="scrolling-navbar-link-services" href="#">SERVICES</a>
+                        <a class="scrolling-navbar-link" id="scrolling-navbar-link-apply" href="#">APPLY</a>
+                        <a class="scrolling-navbar-menu material-icons" onclick="navigationOpen()">menu</a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </header>
         <!-- Header (End) -->

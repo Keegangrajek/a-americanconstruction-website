@@ -129,3 +129,15 @@ function hoverNavigationButtonOff(){
     hdr_logo_text_link_h1_2[0].style.color = "color: var(--color-light-grey)";
 
 };
+
+function hoverScrollingNavbarButtonOn(){
+    document.getElementsByClassName("scrolling-navbar-logo")[0].style.filter = "brightness(1.5)";
+    document.getElementsByClassName("scrolling-navbar-logo-text")[0].style.textShadow = "0px 0px 2px #FFFFFF";
+    document.getElementsByClassName("scrolling-navbar-logo-text")[0].style.color = "white";
+}
+
+function hoverScrollingNavbarButtonOff(){
+    document.getElementsByClassName("scrolling-navbar-logo")[0].style.filter = "brightness(1)";
+    document.getElementsByClassName("scrolling-navbar-logo-text")[0].style.textShadow = "";
+    sdocument.getElementsByClassName("scrolling-navbar-logo-text")[0].style.color = "color: var(--color-light-grey)";
+}

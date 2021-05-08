@@ -96,7 +96,7 @@ example setup:
 
 .hdr-mini-nav {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     background-color: var(--color-light-black);
     width: 100%;
@@ -140,7 +140,7 @@ example setup:
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #hdr-elements {
@@ -169,7 +169,6 @@ example setup:
 }
 
 .hdr-elements-container {
-    width: 100%;
     display: flex;
 }
 
@@ -187,7 +186,7 @@ example setup:
     text-shadow: 0px 0px 2px #FFFFFF;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1120px){
     .hdr-menu {
         display: flex;
     }
@@ -212,10 +211,11 @@ example setup:
     color: var(--color-light-grey);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    width: 100%;
 }
 
 .hdr-logo-text-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--color-light-grey);
     cursor: pointer;
@@ -228,11 +228,11 @@ example setup:
 
 .hdr-logo-text-link-h1-2 {
     display: none;
-    font-size: 18px;
+    font-size: min(max(16px, 4vw), 18px);
     margin-right: 10px;
 }
 
-@media screen and (max-width: 1500px) and (min-width: 960px) {
+@media screen and (max-width: 1500px) and (min-width: 1120px) {
     .hdr-logo-text-link-h1-1 {
         display: none;
     }
@@ -271,17 +271,13 @@ example setup:
 }
 
 .scrollbar-toggle-native-off {
-    height: 35px;
+    height: 40px;
     box-shadow: 0px -30px 30px 40px black;
-}
-
-.scrolling-navbar-wpr:hover {
-    height: 75px;
 }
 
 .scrolling-navbar {
     height: 100%;
-    width: 100%;
+    width: 75%;
     display: flex;
     margin: auto;
     align-items: center;
@@ -289,6 +285,7 @@ example setup:
 }
 
 .scrolling-navbar-logo-container {
+    text-decoration: none;
     display: flex;
     justify-content: center;
 }
@@ -298,15 +295,94 @@ example setup:
     position: relative;
     top: 0px;
     height: 20px;
+    transition: all 0.3s;
+}
+
+.scrolling-navbar-logo-text {
+    transition: all 0.3s;
 }
 
 .scrolling-navbar-logo-container h1 {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--color-light-grey);
     font-size: 1rem;
     margin-left: 5px;
-    margin-top: 2px;
+    margin-top: 1px;
+}
+
+.scrolling-navbar-link-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.scrolling-navbar-link {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--color-light-black);
+    font-weight: bold;
+    border-radius: 30px;
+    color: var(--color-light-black);
+    font-family: helvetica;
+    padding: 4px 20px 2px 20px;
+    text-decoration: none;
+    background-color: var(--color-light-grey);
+    transition-timing-function: ease;
+    transition:all 0.2s;
+    margin: 0px 10px;
+   /*  //
+    font-weight: bold;
+    margin: 20px 10px;
+    border-radius: 30px;
+    color: var(--color-light-black);
+    font-family: helvetica;
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: var(--color-light-grey);
+    transition-timing-function: ease;
+    transition:all 0.2s; */
+}
+
+.scrolling-navbar-link:hover {
+    color: black;
+    background-color:rgb(212, 220, 230);
+    box-shadow: 0px 0px 6px 0px #FFFFFF;
+}
+
+.scrolling-navbar-link:active {
+    transition: box-shadow 0.1s;
+    background-color:rgb(165, 165, 165);
+    box-shadow: inset 0px 0px 6px 0px #000000;
+}
+
+.scrolling-navbar-menu {
+    display: none;
+    font-size: 2rem;
+    color: var(--color-light-grey);
+    transition: all 0.3s;
+}
+
+.scrolling-navbar-menu:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 2px #FFFFFF;;
+}
+
+@media screen and (max-width: 1220px) {
+    .scrolling-navbar-menu {
+        display: flex;
+    }
+
+    .scrolling-navbar-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .scrolling-navbar-logo-container h1 {
+        display: none !important;
+    }
 }
 
 /* == bdy section == */
