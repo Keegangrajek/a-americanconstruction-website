@@ -286,6 +286,7 @@ example setup:
 
 .scrolling-navbar-logo-container {
     text-decoration: none;
+    color: var(--color-light-grey);
     display: flex;
     justify-content: center;
 }
@@ -303,6 +304,7 @@ example setup:
 }
 
 .scrolling-navbar-logo-container h1 {
+    text-decoration: none;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-light-grey);
@@ -342,6 +344,10 @@ example setup:
     background-color: var(--color-light-grey);
     transition-timing-function: ease;
     transition:all 0.2s; */
+}
+
+.display-none {
+    display: none;
 }
 
 .scrolling-navbar-link:hover {

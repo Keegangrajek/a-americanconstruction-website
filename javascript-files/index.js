@@ -50,22 +50,26 @@ window.addEventListener("scroll", function() {
 function instanceOfScrollbarCheck(height_of_initial) {
     var l = document.querySelector("#id-scrolling-navbar-wpr").classList;
     if (window.scrollY > height_of_initial) {
-        if (l.contains("scrollbar-toggle-native-on") == true){
+        if (l.contains("scrollbar-toggle-native-on") == true){ // scrolling navbar is active
             l.remove("scrollbar-toggle-native-on");
             l.add("scrollbar-toggle-native-off");
+            disableOrEnableNavbarElements(true);
             return;
-        } if (l.contains("scrollbar-toggle-native-off")) {
+        } if (l.contains("scrollbar-toggle-native-off")) { // scrolling navbar is active
+            disableOrEnableNavbarElements(true);
             return;
         } else {
             console.log("Error: instanceOfScrollbarCheck(): else statement #1");
             return;
         }
     } else {
-        if (l.contains("scrollbar-toggle-native-on") == true){
+        if (l.contains("scrollbar-toggle-native-on") == true){ // scrolling navbar is not active
+            disableOrEnableNavbarElements(false);
             return;
-        } if (l.contains("scrollbar-toggle-native-off")) {
+        } if (l.contains("scrollbar-toggle-native-off")) { // scrolling navbar is not active
             l.remove("scrollbar-toggle-native-off");
             l.add("scrollbar-toggle-native-on");
+            disableOrEnableNavbarElements(false);
             return;
         } else {
             console.log("Error: instanceOfScrollbarCheck(): else statement #2");
@@ -73,6 +77,75 @@ function instanceOfScrollbarCheck(height_of_initial) {
         }
     }
 }
+
+
+// I need to change this code to detect if the elements have the display-none class to them because this will be firing quite a lot
+
+function disableOrEnableNavbarElements(scrolling_navbar_is_active){
+    // debug mode for troubleshooting issues with this working
+    var debug_mode = true;
+    var scrolling_navbar_logo_text = document.getElementById("id-scrolling-navbar-logo-text");
+    var scrolling_navbar_logo = document.getElementById("id-scrolling-navbar-logo");
+    var scrolling_navbar_logo_container = document.getElementById("id-scrolling-navbar-logo-container");
+    var array_scrolling_navbar_links = document.getElementsByClassName("scrolling-navbar-link");
+    var scrolling_navbar_menu = document.getElementById("id-scrolling-navbar-menu");
+    if (scrolling_navbar_is_active) {
+        if (scrolling_navbar_menu.classList.contains("display-none") == true) {
+            for (let p = 0; p < array_scrolling_navbar_links.length; p++) {
+                array_scrolling_navbar_links[p].classList.remove("display-none");
+            }
+    
+            scrolling_navbar_logo.classList.remove("display-none");
+            scrolling_navbar_logo_text.classList.remove("display-none");
+            scrolling_navbar_logo_container.classList.remove("display-none");
+            scrolling_navbar_menu.classList.remove("display-none");
+    
+            if (debug_mode){
+                console.log("scrolling_navbar_is_active");
+            }
+            return;
+        } else {
+            return;
+        }
+    }
+    if (!scrolling_navbar_is_active) {
+        if (scrolling_navbar_menu.classList.contains("display-none") == false) {
+            for (let q = 0; q < array_scrolling_navbar_links.length; q++) {
+                array_scrolling_navbar_links[q].classList.add("display-none");
+            }
+            
+            scrolling_navbar_logo.classList.add("display-none");
+            scrolling_navbar_logo_text.classList.add("display-none");
+            scrolling_navbar_logo_container.classList.add("display-none");
+            scrolling_navbar_menu.classList.add("display-none");
+    
+            if (debug_mode){
+                console.log("!scrolling_navbar_is_active");
+            }
+    
+            return;
+        } else {
+            return;
+        }
+    }
+    console.log("error #1 in disableOrEnableNavbarElements()");
+    return;
+}
+
+
+/*  Structure of the html for reference of function targeting  
+
+    <a class="scrolling-navbar-logo-container" id="id-scrolling-navbar-logo-container" href="#" onmouseover="hoverScrollingNavbarButtonOn()" onmouseout="hoverScrollingNavbarButtonOff()">
+        <img class="scrolling-navbar-logo" id="id-scrolling-navbar-logo" src="./img-files/logo.svg" alt="logo-image"></img>
+        <h1 class="scrolling-navbar-logo-text" id="id-scrolling-navbar-logo-text">A-American Construction</h1>
+    </a>
+    <a class="scrolling-navbar-link" id="scrolling-navbar-link-home" href="#">HOME</a>
+    <a class="scrolling-navbar-link" id="scrolling-navbar-link-about" href="#">ABOUT</a>
+    <a class="scrolling-navbar-link" id="scrolling-navbar-link-contact" href="#">CONTACT</a>
+    <a class="scrolling-navbar-link" id="scrolling-navbar-link-services" href="#">SERVICES</a>
+    <a class="scrolling-navbar-link" id="scrolling-navbar-link-apply" href="#">APPLY</a>
+    <a class="scrolling-navbar-menu material-icons" id="id-scrolling-navbar-menu" onclick="navigationOpen()">menu</a>
+*/
 
 
 
@@ -139,5 +212,5 @@ function hoverScrollingNavbarButtonOn(){
 function hoverScrollingNavbarButtonOff(){
     document.getElementsByClassName("scrolling-navbar-logo")[0].style.filter = "brightness(1)";
     document.getElementsByClassName("scrolling-navbar-logo-text")[0].style.textShadow = "";
-    sdocument.getElementsByClassName("scrolling-navbar-logo-text")[0].style.color = "color: var(--color-light-grey)";
+    document.getElementsByClassName("scrolling-navbar-logo-text")[0].style.color = "color: var(--color-light-grey)";
 }
